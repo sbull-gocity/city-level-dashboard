@@ -1,3 +1,4 @@
+
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis } from "recharts";
 import { Info, ArrowUp } from "lucide-react";
@@ -150,7 +151,7 @@ export function CustomerInsights() {
                   <Info className="w-4 h-4 text-gray-400 cursor-help" />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p className="text-xs">This tells you how much time has lapsed between a customer buying a pass and using it at The Shard</p>
+                  <p className="text-xs">This tells you how much time has lapsed between a customer buying a pass and using it in London</p>
                 </TooltipContent>
               </Tooltip>
             </div>
