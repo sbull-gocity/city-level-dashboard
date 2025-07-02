@@ -173,17 +173,17 @@ export function CustomerInsights() {
             </ChartContainer>
           </div>
 
-          {/* Chart 5 - A Go City customer last visited The Shard */}
+          {/* Chart 5 - A Go City pass was last scanned at a London attraction */}
           <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
             <div className="flex items-center justify-between mb-4">
               <div className="w-4 h-4 border border-black rounded-full"></div>
               <span className="text-xs font-mono text-gray-400">CHART 5</span>
             </div>
             
-            <h3 className="text-sm font-bold text-black mb-8">A Go City customer last visited The Shard</h3>
+            <h3 className="text-sm font-bold text-black mb-8">A Go City pass was last scanned at a London attraction</h3>
             
             <div className="flex items-center justify-center h-32">
-              <span className="text-4xl font-bold text-black">12 minutes ago</span>
+              <span className="text-4xl font-bold text-black">45 seconds ago</span>
             </div>
           </div>
 
