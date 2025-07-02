@@ -28,9 +28,9 @@ export function NPSChart() {
       
       <div className="flex items-center gap-1 text-sm text-gray-600">
         <span>This is</span>
-        <span className="font-bold">higher</span>
+        <span className="font-bold text-lg">higher</span>
         <span>than the industry average NPS of 40</span>
-        <ArrowUp className="w-4 h-4 text-black" />
+        <ArrowUp className="w-8 h-8 text-black" />
       </div>
     </div>
   );
