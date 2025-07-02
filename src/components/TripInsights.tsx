@@ -21,7 +21,9 @@ export function TripInsights() {
           <ShardVisitDay />
           <TripLengthChart />
           <Advertisement />
-          <Advertisement />
+          <div className="col-span-1 md:col-span-2 lg:col-span-3">
+            <Advertisement />
+          </div>
           <ShardProximityStats />
           <NearestAttractions />
           <PopularCategories />
