@@ -7,14 +7,14 @@ export function ShardAttractionCount() {
         <span className="text-xs font-mono text-gray-400">CHART 3</span>
       </div>
       
-      <h3 className="text-sm font-bold text-black mb-8">Customers who visit The Shard go to</h3>
+      <h3 className="text-sm font-bold text-black mb-8">Customers who visit London go to</h3>
       
       <div className="flex items-center justify-center h-20">
-        <span className="text-4xl font-bold text-black">5</span>
+        <span className="text-4xl font-bold text-black">7</span>
       </div>
       
       <div className="flex items-center justify-center mt-8">
-        <span className="text-sm text-gray-600">other Go City attractions</span>
+        <span className="text-sm text-gray-600">Go City attractions</span>
       </div>
     </div>
   );
