@@ -187,28 +187,17 @@ export function CustomerInsights() {
             </div>
           </div>
 
-          {/* Chart 6 - Placeholder */}
+          {/* Chart 6 - On average, Go City customers in London open the app */}
           <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
             <div className="flex items-center justify-between mb-4">
               <div className="w-4 h-4 border border-black rounded-full"></div>
               <span className="text-xs font-mono text-gray-400">CHART 6</span>
             </div>
             
-            <div className="space-y-2">
-              <div className="h-2 bg-gray-200 rounded w-3/4"></div>
-              <div className="h-2 bg-gray-200 rounded w-1/2"></div>
-            </div>
+            <h3 className="text-sm font-bold text-black mb-8">On average, Go City customers in London open the app</h3>
             
-            <div className="mt-8 space-y-3">
-              <div className="flex justify-between">
-                <div className="w-8 h-8 border border-gray-300 rounded"></div>
-                <div className="w-8 h-8 border border-gray-300 rounded"></div>
-                <div className="w-8 h-8 border border-gray-300 rounded"></div>
-              </div>
-              
-              <div className="h-20 border border-gray-300 rounded flex items-center justify-center">
-                <span className="text-xs text-gray-400 font-mono">VISUALIZATION</span>
-              </div>
+            <div className="flex items-center justify-center h-32">
+              <span className="text-4xl font-bold text-black">4 times per day</span>
             </div>
           </div>
         </div>
