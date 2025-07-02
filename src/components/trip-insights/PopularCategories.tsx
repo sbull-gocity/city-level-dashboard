@@ -9,20 +9,20 @@ export function PopularCategories() {
         <span className="text-xs font-mono text-gray-400">CHART 7</span>
       </div>
       
-      <h3 className="text-sm font-bold text-black mb-6">Most popular categories for customers who visit The Shard</h3>
+      <h3 className="text-sm font-bold text-black mb-6">Most popular categories for Go City customers in London</h3>
       
       <div className="space-y-4">
         <div className="flex items-center gap-3">
-          <Eye className="h-5 w-5 text-gray-600" />
-          <span className="text-sm text-gray-800">Observation decks</span>
+          <MapPin className="h-5 w-5 text-gray-600" />
+          <span className="text-sm text-gray-800">Landmarks</span>
         </div>
         <div className="flex items-center gap-3">
           <Building className="h-5 w-5 text-gray-600" />
           <span className="text-sm text-gray-800">Museums</span>
         </div>
         <div className="flex items-center gap-3">
-          <MapPin className="h-5 w-5 text-gray-600" />
-          <span className="text-sm text-gray-800">Landmarks</span>
+          <Eye className="h-5 w-5 text-gray-600" />
+          <span className="text-sm text-gray-800">Observation decks</span>
         </div>
       </div>
     </div>

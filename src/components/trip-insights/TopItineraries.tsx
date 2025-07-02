@@ -9,7 +9,7 @@ export function TopItineraries() {
         <span className="text-xs font-mono text-gray-400">CHART 8</span>
       </div>
       
-      <h3 className="text-sm font-bold text-black mb-6">Top 3 itineraries which include The Shard</h3>
+      <h3 className="text-sm font-bold text-black mb-6">Top 3 London itineraries</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* 2-Day Trip */}
@@ -21,14 +21,14 @@ export function TopItineraries() {
           <div className="space-y-2 text-sm">
             <div className="font-medium text-black">Day 1:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
+              <li>• London Eye</li>
+              <li>• Westminster Abbey</li>
               <li>• The Shard</li>
-              <li>• Tower of London</li>
-              <li>• Tower Bridge</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 2:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• London Eye</li>
-              <li>• Westminster Abbey</li>
+              <li>• Tower of London</li>
+              <li>• Tower Bridge</li>
               <li>• Big Ben</li>
             </ul>
           </div>
@@ -43,20 +43,20 @@ export function TopItineraries() {
           <div className="space-y-2 text-sm">
             <div className="font-medium text-black">Day 1:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
+              <li>• British Museum</li>
+              <li>• Covent Garden</li>
               <li>• The Shard</li>
-              <li>• Borough Market</li>
-              <li>• Southwark Cathedral</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 2:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• St Paul's Cathedral</li>
+              <li>• Borough Market</li>
+              <li>• Southwark Cathedral</li>
               <li>• Tate Modern</li>
-              <li>• Shakespeare's Globe</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 3:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• British Museum</li>
-              <li>• Covent Garden</li>
+              <li>• St Paul's Cathedral</li>
+              <li>• Shakespeare's Globe</li>
             </ul>
           </div>
         </div>
@@ -70,26 +70,26 @@ export function TopItineraries() {
           <div className="space-y-2 text-sm">
             <div className="font-medium text-black">Day 1:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
+              <li>• Kensington Palace</li>
+              <li>• Natural History Museum</li>
               <li>• The Shard</li>
-              <li>• London Bridge Experience</li>
-              <li>• HMS Belfast</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 2:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• Tower of London</li>
-              <li>• Tower Bridge</li>
+              <li>• London Bridge Experience</li>
+              <li>• HMS Belfast</li>
               <li>• St Katharine Docks</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 3:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• Westminster Abbey</li>
-              <li>• Houses of Parliament</li>
+              <li>• Tower of London</li>
+              <li>• Tower Bridge</li>
               <li>• Churchill War Rooms</li>
             </ul>
             <div className="font-medium text-black mt-3">Day 4:</div>
             <ul className="text-gray-700 space-y-1 ml-2">
-              <li>• Kensington Palace</li>
-              <li>• Natural History Museum</li>
+              <li>• Westminster Abbey</li>
+              <li>• Houses of Parliament</li>
             </ul>
           </div>
         </div>
