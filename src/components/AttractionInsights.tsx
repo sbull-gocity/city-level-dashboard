@@ -1,6 +1,6 @@
-
 import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Button } from "@/components/ui/button";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 const ratingsData = [
@@ -123,6 +123,18 @@ export function AttractionInsights() {
           
           <div className="flex flex-col items-center justify-center h-32">
             <div className="text-6xl font-bold text-black blur-lg">98 minutes</div>
+          </div>
+        </div>
+
+        {/* Advertisement slot spanning all three columns */}
+        <div className="lg:col-span-3 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-lg p-8 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              Unlock insights about your attraction for free with Footfall by Go City
+            </h3>
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold">
+              Register interest now
+            </Button>
           </div>
         </div>
 
