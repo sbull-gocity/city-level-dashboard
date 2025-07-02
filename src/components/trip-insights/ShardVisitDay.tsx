@@ -1,5 +1,4 @@
 
-
 export function ShardVisitDay() {
   return (
     <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
@@ -15,9 +14,8 @@ export function ShardVisitDay() {
       </div>
       
       <div className="flex items-center justify-center mt-8">
-        <span className="text-sm text-gray-600">customers make the most of their time in London</span>
+        <span className="text-sm text-gray-600">customers make the most of their time in London over the last 30 days</span>
       </div>
     </div>
   );
 }
-
