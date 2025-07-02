@@ -2,6 +2,7 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis } from "recharts";
 import { Info, ArrowUp } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Button } from "@/components/ui/button";
 
 const sourceMarkets = [
   { rank: 1, country: "USA" },
@@ -200,6 +201,16 @@ export function CustomerInsights() {
               <span className="text-4xl font-bold text-black">4 times per day</span>
             </div>
           </div>
+        </div>
+
+        {/* Advertisement Slot */}
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8 text-center">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">
+            Join the other 104 amazing London attractions who work with Go City to drive more footfall to their door!
+          </h3>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2">
+            Find out more
+          </Button>
         </div>
       </div>
     </TooltipProvider>
