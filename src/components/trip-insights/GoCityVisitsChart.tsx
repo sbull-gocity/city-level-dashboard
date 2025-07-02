@@ -9,8 +9,8 @@ export function GoCityVisitsChart() {
       
       <h3 className="text-sm font-bold text-black mb-8">Go City customers visit</h3>
       
-      <div className="flex flex-col items-center justify-center h-24">
-        <div className="text-6xl font-bold text-black mb-4">7</div>
+      <div className="flex flex-col items-center justify-center h-20">
+        <div className="text-6xl font-bold text-black mb-2">7</div>
         <p className="text-sm text-gray-700 text-center">
           Go City attractions whilst they're in London
         </p>

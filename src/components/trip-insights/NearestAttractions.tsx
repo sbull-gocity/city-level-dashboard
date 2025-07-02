@@ -22,7 +22,7 @@ export function NearestAttractions() {
         </HoverCard>
       </div>
       
-      <div className="space-y-3">
+      <div className="space-y-1">
         <div className="flex items-center">
           <span className="text-sm text-gray-800">1. London Eye</span>
         </div>
