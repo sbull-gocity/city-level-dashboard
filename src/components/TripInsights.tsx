@@ -3,7 +3,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { TripLengthChart } from "./trip-insights/TripLengthChart";
 import { ShardVisitDay } from "./trip-insights/ShardVisitDay";
 import { Advertisement } from "./trip-insights/Advertisement";
-import { ShardAttractionFlow } from "./trip-insights/ShardAttractionFlow";
 import { ShardProximityStats } from "./trip-insights/ShardProximityStats";
 import { NearestAttractions } from "./trip-insights/NearestAttractions";
 import { PopularCategories } from "./trip-insights/PopularCategories";
@@ -22,7 +21,7 @@ export function TripInsights() {
           <ShardVisitDay />
           <TripLengthChart />
           <Advertisement />
-          <ShardAttractionFlow />
+          <Advertisement />
           <ShardProximityStats />
           <NearestAttractions />
           <PopularCategories />
