@@ -26,7 +26,7 @@ export function NPSChart() {
         <span className="text-6xl font-bold text-black">64</span>
       </div>
       
-      <div className="flex items-center gap-1 text-sm text-gray-600">
+      <div className="flex items-center justify-center gap-1 text-sm text-gray-600">
         <span>This is</span>
         <span className="font-bold text-lg">higher</span>
         <span>than the industry average NPS of 40</span>
