@@ -68,7 +68,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2 blur-sm">2nd</div>
+            <div className="text-6xl font-bold text-black mb-2 blur-lg">2nd</div>
             <div className="text-sm text-gray-600 text-center">
               out of all Go City attractions in London
             </div>
@@ -95,7 +95,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2 blur-sm">1st</div>
+            <div className="text-6xl font-bold text-black mb-2 blur-lg">1st</div>
             <div className="text-sm text-gray-600 text-center">
               out of all attractions in the Observation Deck category
             </div>
@@ -122,7 +122,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black blur-sm">98 minutes</div>
+            <div className="text-6xl font-bold text-black blur-lg">98 minutes</div>
           </div>
         </div>
 
@@ -137,7 +137,7 @@ export function AttractionInsights() {
             <h3 className="text-sm font-medium text-black">Ratings for Your Attraction from Go City customers</h3>
           </div>
           
-          <div className="h-32 blur-sm">
+          <div className="h-32 blur-lg">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={ratingsData}
@@ -171,7 +171,7 @@ export function AttractionInsights() {
             <h3 className="text-sm font-medium text-black">AI summary of reviews from Go City customers</h3>
           </div>
           
-          <div className="space-y-4 text-sm text-gray-700 leading-relaxed blur-sm">
+          <div className="space-y-4 text-sm text-gray-700 leading-relaxed blur-lg">
             <p>
               Visitors consistently praise Your Attraction for its breathtaking panoramic views of London, 
               with many describing the experience as "unforgettable" and highlighting the spectacular 
@@ -192,7 +192,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black blur-sm">86%</div>
+            <div className="text-6xl font-bold text-black blur-lg">86%</div>
           </div>
         </div>
 
@@ -207,7 +207,7 @@ export function AttractionInsights() {
             <h3 className="text-sm font-medium text-black">When are Go City customers making their reservations for Your Attraction?</h3>
           </div>
           
-          <div className="h-32 blur-sm">
+          <div className="h-32 blur-lg">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -239,7 +239,7 @@ export function AttractionInsights() {
             <h3 className="text-sm font-medium text-black">When are Go City customers visiting Your Attraction?</h3>
           </div>
           
-          <div className="h-32 blur-sm">
+          <div className="h-32 blur-lg">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={visitTimeData}
