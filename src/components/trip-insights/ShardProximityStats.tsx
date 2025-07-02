@@ -11,7 +11,7 @@ export function ShardProximityStats() {
       </div>
       
       <div className="flex items-center gap-2 mb-8">
-        <h3 className="text-sm font-bold text-black">How many Go City customers walk past The Shard?</h3>
+        <h3 className="text-sm font-bold text-black">Go city customers have created</h3>
         <Tooltip>
           <TooltipTrigger asChild>
             <Info className="h-4 w-4 text-gray-500 cursor-help" />
@@ -22,8 +22,11 @@ export function ShardProximityStats() {
         </Tooltip>
       </div>
       
-      <div className="flex items-center justify-center h-20">
-        <span className="text-4xl font-bold text-black">1,078</span>
+      <div className="flex flex-col items-center justify-center h-16">
+        <span className="text-4xl font-bold text-black mb-2">38,932</span>
+        <p className="text-sm text-gray-700 text-center">
+          different itineraries in London this year
+        </p>
       </div>
     </div>
   );
