@@ -1,5 +1,5 @@
 
-import { Info } from "lucide-react";
+import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
@@ -40,12 +40,15 @@ export function AttractionInsights() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold text-black">Attraction Insights</h2>
+        <div className="flex items-center gap-2">
+          <h2 className="text-xl font-bold text-black">Attraction Insights</h2>
+          <Lock className="w-5 h-5" strokeWidth={1.5} />
+        </div>
         <div className="text-xs text-gray-500 font-mono">SECTION 03</div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Chart 1 - The Shard Ranks */}
+        {/* Chart 1 - Your Attraction Ranks */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -53,7 +56,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">The Shard ranks</h3>
+            <h3 className="text-sm font-medium text-black">Your Attraction ranks</h3>
             <HoverCard>
               <HoverCardTrigger asChild>
                 <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -65,14 +68,14 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2">2nd</div>
+            <div className="text-6xl font-bold text-black mb-2 blur-sm">2nd</div>
             <div className="text-sm text-gray-600 text-center">
               out of all Go City attractions in London
             </div>
           </div>
         </div>
 
-        {/* Chart 2 - The Shard Ranks in Observation Deck Category */}
+        {/* Chart 2 - Your Attraction Ranks in Observation Deck Category */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -80,7 +83,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">The Shard ranks</h3>
+            <h3 className="text-sm font-medium text-black">Your Attraction ranks</h3>
             <HoverCard>
               <HoverCardTrigger asChild>
                 <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -92,14 +95,14 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2">1st</div>
+            <div className="text-6xl font-bold text-black mb-2 blur-sm">1st</div>
             <div className="text-sm text-gray-600 text-center">
               out of all attractions in the Observation Deck category
             </div>
           </div>
         </div>
 
-        {/* Chart 3 - Average Dwell Time at The Shard */}
+        {/* Chart 3 - Average Dwell Time at Your Attraction */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -107,7 +110,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">Average dwell time at The Shard</h3>
+            <h3 className="text-sm font-medium text-black">Average dwell time at Your Attraction</h3>
             <HoverCard>
               <HoverCardTrigger asChild>
                 <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -119,11 +122,11 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black">98 minutes</div>
+            <div className="text-6xl font-bold text-black blur-sm">98 minutes</div>
           </div>
         </div>
 
-        {/* Chart 4 - Ratings for The Shard from Go City customers */}
+        {/* Chart 4 - Ratings for Your Attraction from Go City customers */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -131,10 +134,10 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">Ratings for The Shard from Go City customers</h3>
+            <h3 className="text-sm font-medium text-black">Ratings for Your Attraction from Go City customers</h3>
           </div>
           
-          <div className="h-32">
+          <div className="h-32 blur-sm">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={ratingsData}
@@ -168,16 +171,16 @@ export function AttractionInsights() {
             <h3 className="text-sm font-medium text-black">AI summary of reviews from Go City customers</h3>
           </div>
           
-          <div className="space-y-4 text-sm text-gray-700 leading-relaxed">
+          <div className="space-y-4 text-sm text-gray-700 leading-relaxed blur-sm">
             <p>
-              Visitors consistently praise The Shard for its breathtaking panoramic views of London, 
+              Visitors consistently praise Your Attraction for its breathtaking panoramic views of London, 
               with many describing the experience as "unforgettable" and highlighting the spectacular 
               sunset and night-time city views from the observation deck.
             </p>
           </div>
         </div>
 
-        {/* Chart 6 - Go City visitors to The Shard with an advance reservation */}
+        {/* Chart 6 - Go City visitors to Your Attraction with an advance reservation */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -185,15 +188,15 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">Go City visitors to The Shard with an advance reservation</h3>
+            <h3 className="text-sm font-medium text-black">Go City visitors to Your Attraction with an advance reservation</h3>
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black">86%</div>
+            <div className="text-6xl font-bold text-black blur-sm">86%</div>
           </div>
         </div>
 
-        {/* Chart 7 - When are Go City customers making their reservations for The Shard? */}
+        {/* Chart 7 - When are Go City customers making their reservations for Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -201,10 +204,10 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">When are Go City customers making their reservations for The Shard?</h3>
+            <h3 className="text-sm font-medium text-black">When are Go City customers making their reservations for Your Attraction?</h3>
           </div>
           
-          <div className="h-32">
+          <div className="h-32 blur-sm">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -225,7 +228,7 @@ export function AttractionInsights() {
           </div>
         </div>
 
-        {/* Chart 8 - When are Go City customers visiting The Shard? */}
+        {/* Chart 8 - When are Go City customers visiting Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
             <div className="w-4 h-4 border border-black rounded-full"></div>
@@ -233,10 +236,10 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex items-center gap-2 mb-4">
-            <h3 className="text-sm font-medium text-black">When are Go City customers visiting The Shard?</h3>
+            <h3 className="text-sm font-medium text-black">When are Go City customers visiting Your Attraction?</h3>
           </div>
           
-          <div className="h-32">
+          <div className="h-32 blur-sm">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={visitTimeData}

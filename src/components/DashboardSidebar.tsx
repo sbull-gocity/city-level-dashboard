@@ -1,5 +1,4 @@
-
-import { Users, MapPin, Star } from "lucide-react";
+import { Users, MapPin, Star, Lock } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -31,6 +30,7 @@ const menuItems = [
     id: "attraction",
     title: "Attraction Insights",
     icon: Star,
+    showLock: true,
   },
 ];
 
@@ -59,7 +59,10 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
                     `}
                   >
                     <item.icon className="w-5 h-5 mr-3" strokeWidth={1.5} />
-                    <span className="text-sm">{item.title}</span>
+                    <span className="text-sm flex items-center gap-2">
+                      {item.title}
+                      {item.showLock && <Lock className="w-4 h-4" strokeWidth={1.5} />}
+                    </span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
