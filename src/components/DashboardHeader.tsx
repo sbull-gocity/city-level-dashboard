@@ -11,7 +11,7 @@ export function DashboardHeader() {
         
         <div>
           <h1 className="text-2xl font-bold text-black tracking-wide">
-            THE SHARD
+            LONDON
           </h1>
           <p className="text-sm text-gray-600 font-mono">
             Performance Dashboard
