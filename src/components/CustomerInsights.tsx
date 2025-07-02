@@ -1,3 +1,4 @@
+
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis } from "recharts";
 import { Info, ArrowUp } from "lucide-react";
@@ -112,7 +113,7 @@ export function CustomerInsights() {
             </div>
             
             <div className="flex items-center gap-2 mb-6">
-              <h3 className="text-sm font-bold text-black">NPS of Customers Visiting The Shard</h3>
+              <h3 className="text-sm font-bold text-black">NPS of customers visiting London</h3>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -124,13 +125,13 @@ export function CustomerInsights() {
             </div>
             
             <div className="flex items-center justify-center mb-8">
-              <span className="text-6xl font-bold text-black">65</span>
+              <span className="text-6xl font-bold text-black">64</span>
             </div>
             
             <div className="flex items-center gap-1 text-sm text-gray-600">
               <span>This is</span>
               <span className="font-bold">higher</span>
-              <span>than the overall NPS for London - 64</span>
+              <span>than the industry average NPS of 40</span>
               <ArrowUp className="w-4 h-4 text-black" />
             </div>
           </div>
