@@ -1,4 +1,3 @@
-
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis } from "recharts";
 import { Info, ArrowUp } from "lucide-react";
@@ -20,10 +19,10 @@ const partySizeData = [
 ];
 
 const purchaseToUsageData = [
-  { timeframe: "Less than 1 day", value: 35 },
-  { timeframe: "1-7 days", value: 28 },
+  { timeframe: "Less than 1 day", value: 25 },
+  { timeframe: "1-7 days", value: 40 },
   { timeframe: "7-30 days", value: 22 },
-  { timeframe: "30+ days", value: 15 }
+  { timeframe: "30+ days", value: 13 }
 ];
 
 const chartConfig = {
@@ -144,7 +143,7 @@ export function CustomerInsights() {
             </div>
             
             <div className="flex items-center gap-2 mb-4">
-              <h3 className="text-sm font-bold text-black">Pass Purchase to Usage for Customers Visiting The Shard</h3>
+              <h3 className="text-sm font-bold text-black">Pass purchase to usage for customers visiting London</h3>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Info className="w-4 h-4 text-gray-400 cursor-help" />
