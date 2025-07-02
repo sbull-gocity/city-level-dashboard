@@ -1,7 +1,4 @@
 
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Info } from "lucide-react";
-
 export function ShardProximityStats() {
   return (
     <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
@@ -10,16 +7,8 @@ export function ShardProximityStats() {
         <span className="text-xs font-mono text-gray-400">CHART 5</span>
       </div>
       
-      <div className="flex items-center gap-2 mb-8">
+      <div className="mb-8">
         <h3 className="text-sm font-bold text-black">Go city customers have created</h3>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Info className="h-4 w-4 text-gray-500 cursor-help" />
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>This shows how many Go City customers were within 0.5 miles of The Shard over the last 30 days but didn't visit</p>
-          </TooltipContent>
-        </Tooltip>
       </div>
       
       <div className="flex flex-col items-center justify-center h-16">
