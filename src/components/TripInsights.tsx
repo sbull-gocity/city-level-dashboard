@@ -1,12 +1,13 @@
+
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { BarChart, Bar, XAxis, YAxis } from "recharts";
 import { Info, Eye, Building, MapPin, Clock } from "lucide-react";
 
 const tripLengthData = [
-  { duration: "1-2 days", value: 32 },
-  { duration: "3-4 days", value: 28 },
-  { duration: "5-6 days", value: 22 },
+  { duration: "1-2 days", value: 15 },
+  { duration: "3-4 days", value: 35 },
+  { duration: "5-6 days", value: 32 },
   { duration: "6-7 days", value: 12 },
   { duration: "8+ days", value: 6 }
 ];
@@ -25,14 +26,14 @@ export function TripInsights() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Chart 1 - Trip Length for Customers who Visit The Shard */}
+          {/* Chart 1 - Trip Length for Customers who Visit London */}
           <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
             <div className="flex items-center justify-between mb-4">
               <div className="w-4 h-4 border border-black rounded-full"></div>
               <span className="text-xs font-mono text-gray-400">CHART 1</span>
             </div>
             
-            <h3 className="text-sm font-bold text-black mb-4">Trip Length for Customers who Visit The Shard</h3>
+            <h3 className="text-sm font-bold text-black mb-4">Trip Length for Customers who Visit London</h3>
             
             <ChartContainer config={chartConfig} className="h-32">
               <BarChart data={tripLengthData} margin={{ top: 20, right: 20, bottom: 40, left: 20 }}>
