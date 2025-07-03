@@ -19,7 +19,11 @@ const Index = () => {
       case "attraction":
         return <AttractionInsights />;
       case "ask":
-        return <AskUsAnything />;
+        return (
+          <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-lg p-8">
+            <AskUsAnything />
+          </div>
+        );
       default:
         return <CustomerInsights />;
     }
