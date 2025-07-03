@@ -8,9 +8,9 @@ export function TopItineraries() {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* 2-Day Trip */}
-        <div className="border border-gray-200 rounded-lg p-4">
+        <div className="border border-gray-200 rounded-lg p-4 bg-[#f0ead6]">
           <div className="flex items-center gap-2 mb-3">
-            <Clock className="h-4 w-4 text-gray-600" />
+            <Clock className="h-4 w-4 text-teal-600" />
             <span className="font-semibold text-black">2-Day Trip</span>
           </div>
           <div className="space-y-2 text-sm">
@@ -30,9 +30,9 @@ export function TopItineraries() {
         </div>
 
         {/* 3-Day Trip */}
-        <div className="border border-gray-200 rounded-lg p-4">
+        <div className="border border-gray-200 rounded-lg p-4 bg-[#f0ead6]">
           <div className="flex items-center gap-2 mb-3">
-            <Clock className="h-4 w-4 text-gray-600" />
+            <Clock className="h-4 w-4 text-teal-600" />
             <span className="font-semibold text-black">3-Day Trip</span>
           </div>
           <div className="space-y-2 text-sm">
@@ -57,9 +57,9 @@ export function TopItineraries() {
         </div>
 
         {/* 4-Day Trip */}
-        <div className="border border-gray-200 rounded-lg p-4">
+        <div className="border border-gray-200 rounded-lg p-4 bg-[#f0ead6]">
           <div className="flex items-center gap-2 mb-3">
-            <Clock className="h-4 w-4 text-gray-600" />
+            <Clock className="h-4 w-4 text-teal-600" />
             <span className="font-semibold text-black">4-Day Trip</span>
           </div>
           <div className="space-y-2 text-sm">
