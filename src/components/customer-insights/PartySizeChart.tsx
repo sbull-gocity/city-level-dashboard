@@ -2,12 +2,7 @@
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { PieChart, Pie, Cell } from "recharts";
 
-const partySizeData = [
-  { name: "Solos", value: 25, fill: "#14b8a6" },
-  { name: "Couples", value: 45, fill: "#0d9488" },
-  { name: "Families", value: 20, fill: "#0f766e" },
-  { name: "Groups", value: 10, fill: "#134e4a" }
-];
+import {useEffect, useState} from "react";
 
 const chartConfig = {
   solos: { label: "Solos" },
@@ -17,14 +12,35 @@ const chartConfig = {
 };
 
 export function PartySizeChart() {
-  return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
-      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Party Size</h3>
-      
+    const [data, setData] = useState(null);
+    useEffect(() => {
+        fetch('http://localhost:8080/order/v1/hackathon/partycomp?destinationName=London&createdDateFrom=2025-01-01&createdDateTo=2025-07-01')
+            .then(response => response.json())
+            .then(json => {
+                setData([
+                    { name: "Solos", value: json.solo, fill: "#14b8a6" },
+                    { name: "Couples", value: json.couple, fill: "#0d9488" },
+                    { name: "Families", value: json.family, fill: "#0f766e" },
+                    { name: "Groups", value: json.groups, fill: "#134e4a" }
+                ])
+                console.log(data)
+            })
+            .catch(error => console.error(error));
+    }, []);
+
+    return (
+    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
+      <div className="flex items-center justify-between mb-4">
+        <div className="w-4 h-4 border border-black rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400">CHART 2</span>
+      </div>
+
+      <h3 className="text-sm font-bold text-black mb-2">Party Size</h3>
+
       <ChartContainer config={chartConfig} className="h-32">
         <PieChart>
           <Pie
-            data={partySizeData}
+            data={data}
             cx="50%"
             cy="50%"
             outerRadius={50}
@@ -32,7 +48,7 @@ export function PartySizeChart() {
             stroke="#ffffff"
             strokeWidth={2}
           >
-            {partySizeData.map((entry, index) => (
+            {data && data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.fill} />
             ))}
           </Pie>
@@ -41,10 +57,10 @@ export function PartySizeChart() {
       </ChartContainer>
       
       <div className="flex flex-wrap gap-3 mt-4">
-        {partySizeData.map((item) => (
+        {data && data.map((item) => (
           <div key={item.name} className="flex items-center gap-2">
             <div 
-              className="w-3 h-3 rounded-full" 
+              className="w-3 h-3 rounded-full"
               style={{ backgroundColor: item.fill }}
             ></div>
             <span className="text-xs text-gray-600 font-medium">{item.name}</span>
