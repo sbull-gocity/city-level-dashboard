@@ -1,4 +1,3 @@
-
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { TripLengthChart } from "./trip-insights/TripLengthChart";
 import { ShardVisitDay } from "./trip-insights/ShardVisitDay";
@@ -15,7 +14,6 @@ export function TripInsights() {
       <div className="space-y-8">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-bold text-gray-900">Trip Insights</h2>
-          <div className="text-xs text-gray-400 font-mono">SECTION 02</div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

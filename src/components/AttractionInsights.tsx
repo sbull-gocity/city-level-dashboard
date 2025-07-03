@@ -1,4 +1,3 @@
-
 import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
@@ -45,7 +44,6 @@ export function AttractionInsights() {
           <h2 className="text-xl font-bold text-black">Attraction Insights</h2>
           <Lock className="w-5 h-5" strokeWidth={1.5} />
         </div>
-        <div className="text-xs text-gray-500 font-mono">SECTION 03</div>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
