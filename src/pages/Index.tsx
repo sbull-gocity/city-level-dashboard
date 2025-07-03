@@ -5,6 +5,7 @@ import { DashboardHeader } from "@/components/DashboardHeader";
 import { CustomerInsights } from "@/components/CustomerInsights";
 import { TripInsights } from "@/components/TripInsights";
 import { AttractionInsights } from "@/components/AttractionInsights";
+import { AskUsAnything } from "@/components/AskUsAnything";
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState("customer");
@@ -17,6 +18,8 @@ const Index = () => {
         return <TripInsights />;
       case "attraction":
         return <AttractionInsights />;
+      case "ask":
+        return <AskUsAnything />;
       default:
         return <CustomerInsights />;
     }

@@ -1,6 +1,5 @@
 
-
-import { Users, MapPin, Star, Lock } from "lucide-react";
+import { Users, MapPin, Star, MessageCircleQuestion } from "lucide-react";
 
 interface DashboardSidebarProps {
   activeTab: string;
@@ -24,6 +23,12 @@ const menuItems = [
     icon: Star,
     showLock: true,
   },
+  {
+    id: "ask",
+    title: "Ask us anything",
+    icon: MessageCircleQuestion,
+    isSpecial: true,
+  },
 ];
 
 export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarProps) {
@@ -36,8 +41,12 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
             onClick={() => setActiveTab(item.id)}
             className={`
               w-full h-16 px-6 rounded-full flex items-center gap-4 text-left font-medium text-lg transition-all duration-200
-              ${activeTab === item.id 
+              ${activeTab === item.id && item.isSpecial
+                ? 'bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white shadow-lg' 
+                : activeTab === item.id 
                 ? 'bg-slate-800 text-white shadow-lg' 
+                : item.isSpecial
+                ? 'border-2 border-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:bg-gradient-to-r hover:from-purple-100 hover:via-pink-100 hover:to-orange-100'
                 : 'border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50'
               }
             `}
@@ -58,4 +67,3 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
     </div>
   );
 }
-
