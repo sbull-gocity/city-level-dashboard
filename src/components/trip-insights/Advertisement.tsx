@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Advertisement() {
   return (
-    <div className="bg-[#f5f1eb] rounded-xl shadow-sm border border-gray-200 p-8">
+    <div className="bg-[#f0ead6] rounded-xl shadow-sm border border-gray-200 p-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Left section - Copy */}
         <div>
@@ -38,12 +38,12 @@ export function Advertisement() {
           </ol>
         </div>
 
-        {/* Right section - London Eye image and CTA */}
+        {/* Right section - London attractions image and CTA */}
         <div className="text-center">
           <div className="rounded-lg h-32 mb-6 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop" 
-              alt="London Eye" 
+              src="/lovable-uploads/a726c795-f398-442a-8b6e-8a49a81bc614.png" 
+              alt="London attractions" 
               className="w-full h-full object-cover"
             />
           </div>
