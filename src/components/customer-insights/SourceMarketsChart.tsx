@@ -9,12 +9,12 @@ const sourceMarkets = [
 
 export function SourceMarketsChart() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-full">
       <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Top 5 Source Markets</h3>
       
-      <div className="space-y-2">
+      <div className="space-y-4">
         {sourceMarkets.map((market) => (
-          <div key={market.rank} className="flex items-center gap-4 py-1">
+          <div key={market.rank} className="flex items-center gap-4 py-2">
             <div className="w-7 h-7 bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">
               {market.rank}
             </div>

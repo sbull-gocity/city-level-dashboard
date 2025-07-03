@@ -17,9 +17,18 @@ export function CustomerInsights() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <SourceMarketsChart />
-          <PartySizeChart />
-          <NPSChart />
+          {/* First row with increased height */}
+          <div className="h-80">
+            <SourceMarketsChart />
+          </div>
+          <div className="h-80">
+            <PartySizeChart />
+          </div>
+          <div className="h-80">
+            <NPSChart />
+          </div>
+          
+          {/* Second row with normal height */}
           <PurchaseToUsageChart />
           
           <StatCard 

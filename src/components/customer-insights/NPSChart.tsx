@@ -4,7 +4,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 export function NPSChart() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-full">
       <div className="flex items-center gap-2 mb-8">
         <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">NPS of customers visiting London</h3>
         <Tooltip>
@@ -17,8 +17,8 @@ export function NPSChart() {
         </Tooltip>
       </div>
       
-      <div className="flex items-center justify-center mb-6">
-        <span className="text-5xl font-bold text-gray-900">64</span>
+      <div className="flex items-center justify-center mb-8">
+        <span className="text-6xl font-bold text-gray-900">64</span>
       </div>
       
       <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
