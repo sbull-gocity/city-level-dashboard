@@ -1,5 +1,4 @@
-
-import { Users, MapPin, Star, MessageCircleQuestion } from "lucide-react";
+import { Users, MapPin, Star, MessageCircleQuestion, Lock } from "lucide-react";
 
 interface DashboardSidebarProps {
   activeTab: string;
