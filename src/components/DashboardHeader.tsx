@@ -11,10 +11,10 @@ export function DashboardHeader() {
         
         <div>
           <h1 className="text-2xl font-bold text-black tracking-wide">
-            LONDON
+            Hey Luke
           </h1>
-          <p className="text-sm text-gray-600 font-mono">
-            Performance Dashboard
+          <p className="text-lg text-gray-600 font-mono">
+            Join us to unlock insights for your attraction in London
           </p>
         </div>
       </div>
