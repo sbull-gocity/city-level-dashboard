@@ -17,9 +17,15 @@ export function CustomerInsights() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <SourceMarketsChart />
-          <PartySizeChart />
-          <NPSChart />
+          <div className="h-80">
+            <SourceMarketsChart />
+          </div>
+          <div className="h-80">
+            <PartySizeChart />
+          </div>
+          <div className="h-80">
+            <NPSChart />
+          </div>
           <PurchaseToUsageChart />
           
           <StatCard 
