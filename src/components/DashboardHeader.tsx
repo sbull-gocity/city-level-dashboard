@@ -16,10 +16,10 @@ export function DashboardHeader() {
       </div>
       
       <div className="flex items-center">
-        <div className="text-teal-600 font-bold text-lg">
+        <div className="text-teal-600 font-bold text-2xl">
           FootFall
         </div>
-        <div className="text-xs text-gray-400 ml-1">
+        <div className="text-sm text-gray-400 ml-1">
           by Go City
         </div>
       </div>
