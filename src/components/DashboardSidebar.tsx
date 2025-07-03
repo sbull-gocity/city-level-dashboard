@@ -1,4 +1,5 @@
 
+
 import { Users, MapPin, Star, Lock } from "lucide-react";
 
 interface DashboardSidebarProps {
@@ -36,7 +37,7 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
             className={`
               w-full h-16 px-6 rounded-full flex items-center gap-4 text-left font-medium text-lg transition-all duration-200
               ${activeTab === item.id 
-                ? 'bg-teal-700 text-white shadow-lg' 
+                ? 'bg-slate-800 text-white shadow-lg' 
                 : 'border-2 border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-50'
               }
             `}
@@ -57,3 +58,4 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
     </div>
   );
 }
+
