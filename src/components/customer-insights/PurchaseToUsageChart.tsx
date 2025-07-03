@@ -33,17 +33,17 @@ export function PurchaseToUsageChart() {
         </Tooltip>
       </div>
       
-      <ChartContainer config={chartConfig} className="h-32">
-        <BarChart data={purchaseToUsageData} margin={{ top: 20, right: 20, bottom: 40, left: 20 }}>
+      <ChartContainer config={chartConfig} className="h-40">
+        <BarChart data={purchaseToUsageData} margin={{ top: 20, right: 20, bottom: 50, left: 20 }}>
           <XAxis 
             type="category" 
             dataKey="timeframe" 
-            tick={{ fontSize: 8, fill: "#666" }}
+            tick={{ fontSize: 10, fill: "#666" }}
             axisLine={false}
             tickLine={false}
             angle={-45}
             textAnchor="end"
-            height={40}
+            height={50}
           />
           <YAxis type="number" hide />
           <Bar dataKey="value" fill="#14b8a6" stroke="#0d9488" strokeWidth={1} radius={[4, 4, 0, 0]} />
