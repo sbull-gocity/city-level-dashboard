@@ -1,4 +1,3 @@
-
 import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
@@ -51,11 +50,6 @@ export function AttractionInsights() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Chart 1 - Your Attraction Ranks */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 1</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">Your Attraction ranks</h3>
             <HoverCard>
@@ -78,11 +72,6 @@ export function AttractionInsights() {
 
         {/* Chart 2 - Your Attraction Ranks in Observation Deck Category */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 2</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">Your Attraction ranks</h3>
             <HoverCard>
@@ -105,11 +94,6 @@ export function AttractionInsights() {
 
         {/* Chart 3 - Average Dwell Time at Your Attraction */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 3</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">Average dwell time at Your Attraction</h3>
             <HoverCard>
@@ -141,11 +125,6 @@ export function AttractionInsights() {
 
         {/* Chart 4 - Ratings for Your Attraction from Go City customers */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 4</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">Ratings for Your Attraction from Go City customers</h3>
           </div>
@@ -175,11 +154,6 @@ export function AttractionInsights() {
 
         {/* Chart 5 - AI summary of reviews spanning 2 columns */}
         <div className="lg:col-span-2 bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 5</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">AI summary of reviews from Go City customers</h3>
           </div>
@@ -195,11 +169,6 @@ export function AttractionInsights() {
 
         {/* Chart 6 - Go City visitors to Your Attraction with an advance reservation */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 6</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">Go City visitors to Your Attraction with an advance reservation</h3>
           </div>
@@ -211,11 +180,6 @@ export function AttractionInsights() {
 
         {/* Chart 7 - When are Go City customers making their reservations for Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 7</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">When are Go City customers making their reservations for Your Attraction?</h3>
           </div>
@@ -243,11 +207,6 @@ export function AttractionInsights() {
 
         {/* Chart 8 - When are Go City customers visiting Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-          <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
-            <span className="text-xs font-mono text-gray-400">CHART 8</span>
-          </div>
-          
           <div className="flex items-center gap-2 mb-4">
             <h3 className="text-sm font-medium text-black">When are Go City customers visiting Your Attraction?</h3>
           </div>
