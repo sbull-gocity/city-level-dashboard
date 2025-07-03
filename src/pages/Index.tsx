@@ -24,9 +24,10 @@ const Index = () => {
 
   return (
     <div 
-      className="min-h-screen flex w-full bg-gray-50 bg-cover bg-center bg-no-repeat"
+      className="min-h-screen flex w-full bg-gray-50 bg-cover bg-center bg-no-repeat bg-fixed"
       style={{
-        backgroundImage: 'url(/lovable-uploads/3c9db86e-a554-480c-a2f4-0d35acaf8b5c.png)'
+        backgroundImage: 'url(/lovable-uploads/3c9db86e-a554-480c-a2f4-0d35acaf8b5c.png)',
+        backgroundPosition: 'center top'
       }}
     >
       <DashboardSidebar activeTab={activeTab} setActiveTab={setActiveTab} />
