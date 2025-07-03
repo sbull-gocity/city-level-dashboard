@@ -17,11 +17,6 @@ const chartConfig = {
 export function TripLengthChart() {
   return (
     <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 1</span>
-      </div>
-      
       <h3 className="text-sm font-bold text-black mb-4">Trip Length for Customers who Visit London</h3>
       
       <ChartContainer config={chartConfig} className="h-32">

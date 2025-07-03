@@ -10,11 +10,6 @@ const sourceMarkets = [
 export function SourceMarketsChart() {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
-      <div className="flex items-center justify-between mb-6">
-        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 1</span>
-      </div>
-      
       <h3 className="text-sm font-semibold text-gray-900 mb-6 uppercase tracking-wide">Top 5 Source Markets</h3>
       
       <div className="space-y-3">

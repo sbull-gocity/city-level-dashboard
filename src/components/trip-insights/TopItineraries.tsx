@@ -4,11 +4,6 @@ import { Clock } from "lucide-react";
 export function TopItineraries() {
   return (
     <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 col-span-full">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 8</span>
-      </div>
-      
       <h3 className="text-sm font-bold text-black mb-6">Top 3 London itineraries</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

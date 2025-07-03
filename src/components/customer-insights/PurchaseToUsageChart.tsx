@@ -21,11 +21,6 @@ const chartConfig = {
 export function PurchaseToUsageChart() {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
-      <div className="flex items-center justify-between mb-6">
-        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 4</span>
-      </div>
-      
       <div className="flex items-center gap-2 mb-6">
         <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Pass purchase to usage for customers visiting London</h3>
         <Tooltip>
