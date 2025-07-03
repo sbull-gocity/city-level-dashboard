@@ -20,7 +20,7 @@ export function TripLengthChart() {
       <h3 className="text-sm font-bold text-black mb-4">Trip Length for Customers who Visit London</h3>
       
       <ChartContainer config={chartConfig} className="h-52">
-        <BarChart data={tripLengthData} margin={{ top: 20, right: 40, bottom: 40, left: 40 }} width={300}>
+        <BarChart data={tripLengthData} margin={{ top: 20, right: 50, bottom: 40, left: 50 }} width={200}>
           <XAxis 
             type="category" 
             dataKey="duration" 
@@ -32,7 +32,7 @@ export function TripLengthChart() {
             height={40}
           />
           <YAxis type="number" hide />
-          <Bar dataKey="value" fill="#14b8a6" stroke="#0d9488" strokeWidth={1} maxBarSize={40} />
+          <Bar dataKey="value" fill="#14b8a6" stroke="#0d9488" strokeWidth={1} maxBarSize={25} />
           <ChartTooltip content={<ChartTooltipContent />} />
         </BarChart>
       </ChartContainer>
