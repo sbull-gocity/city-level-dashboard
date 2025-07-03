@@ -18,16 +18,16 @@ const chartConfig = {
 
 export function PartySizeChart() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-full">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
       <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Party Size</h3>
       
-      <ChartContainer config={chartConfig} className="h-48">
+      <ChartContainer config={chartConfig} className="h-32">
         <PieChart>
           <Pie
             data={partySizeData}
             cx="50%"
             cy="50%"
-            outerRadius={70}
+            outerRadius={50}
             dataKey="value"
             stroke="#ffffff"
             strokeWidth={2}
