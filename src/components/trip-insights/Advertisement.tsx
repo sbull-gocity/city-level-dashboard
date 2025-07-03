@@ -38,10 +38,14 @@ export function Advertisement() {
           </ol>
         </div>
 
-        {/* Right section - Image placeholder and CTA */}
+        {/* Right section - London Eye image and CTA */}
         <div className="text-center">
-          <div className="bg-gray-100 rounded-lg h-32 mb-6 flex items-center justify-center">
-            <span className="text-gray-400 text-sm">Image Placeholder</span>
+          <div className="rounded-lg h-32 mb-6 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop" 
+              alt="London Eye" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-semibold">
             Join the club
