@@ -3,7 +3,7 @@ import { Building2 } from "lucide-react";
 
 export function DashboardHeader() {
   return (
-    <header className="h-40 flex items-center justify-between px-8 bg-white border-b border-gray-200">
+    <header className="h-40 flex items-center justify-between px-8 border-b border-gray-200 bg-white/80 backdrop-blur-sm">
       <div className="flex items-center gap-4">
         <div>
           <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
