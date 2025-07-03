@@ -1,7 +1,6 @@
-
 export function ShardProximityStats() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
+    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-80">
       <div className="mb-8">
         <h3 className="text-sm font-bold text-black">Go city customers have created</h3>
       </div>

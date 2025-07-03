@@ -1,10 +1,9 @@
-
 import { Info } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 export function NearestAttractions() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-80">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
       <div className="flex items-center gap-2 mb-6">
         <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Highest rated Go City attractions</h3>
         <HoverCard>

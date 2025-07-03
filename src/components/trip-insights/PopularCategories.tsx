@@ -1,9 +1,8 @@
-
 import { Eye, Building, MapPin } from "lucide-react";
 
 export function PopularCategories() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-80">
       <h3 className="text-sm font-semibold text-gray-900 mb-8 uppercase tracking-wide">Most popular categories for Go City customers in London</h3>
       
       <div className="space-y-5">
