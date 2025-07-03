@@ -50,7 +50,7 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
             `}
           >
             <item.icon className="w-6 h-6" strokeWidth={1.5} />
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 flex-1">
               {item.title}
               {item.showLock && (
                 <Lock 
@@ -59,6 +59,9 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
                 />
               )}
             </span>
+            {item.isSpecial && (
+              <Lock className="w-5 h-5 text-white" strokeWidth={1.5} />
+            )}
           </button>
         ))}
       </div>
