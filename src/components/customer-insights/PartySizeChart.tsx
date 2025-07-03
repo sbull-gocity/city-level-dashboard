@@ -19,15 +19,15 @@ const chartConfig = {
 export function PartySizeChart() {
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-full">
-      <h3 className="text-sm font-semibold text-gray-900 mb-8 uppercase tracking-wide">Party Size</h3>
+      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Party Size</h3>
       
-      <ChartContainer config={chartConfig} className="h-48">
+      <ChartContainer config={chartConfig} className="h-40">
         <PieChart>
           <Pie
             data={partySizeData}
             cx="50%"
-            cy="50%"
-            outerRadius={80}
+            cy="45%"
+            outerRadius={70}
             dataKey="value"
             stroke="#ffffff"
             strokeWidth={2}
@@ -40,7 +40,7 @@ export function PartySizeChart() {
         </PieChart>
       </ChartContainer>
       
-      <div className="flex flex-wrap gap-3 mt-6">
+      <div className="flex flex-wrap gap-3 mt-4">
         {partySizeData.map((item) => (
           <div key={item.name} className="flex items-center gap-2">
             <div 
