@@ -1,3 +1,4 @@
+
 import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
@@ -112,7 +113,7 @@ export function AttractionInsights() {
         </div>
 
         {/* Advertisement slot spanning all three columns */}
-        <div className="lg:col-span-3 bg-gradient-to-r from-teal-50 to-teal-100 border-2 border-teal-200 rounded-lg p-8 text-center">
+        <div className="lg:col-span-3 bg-[#f5f1eb] border-2 border-gray-200 rounded-lg p-8 text-center">
           <div className="max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               Unlock insights about your attraction for free with Footfall by Go City
