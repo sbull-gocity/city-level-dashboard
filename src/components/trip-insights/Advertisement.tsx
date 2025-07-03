@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Advertisement() {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+    <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl shadow-sm border border-teal-200 p-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Left section - Copy */}
         <div>

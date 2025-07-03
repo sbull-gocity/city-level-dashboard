@@ -32,7 +32,7 @@ export function TripLengthChart() {
             height={40}
           />
           <YAxis type="number" hide />
-          <Bar dataKey="value" fill="#404040" stroke="#000000" strokeWidth={1} />
+          <Bar dataKey="value" fill="#14b8a6" stroke="#0d9488" strokeWidth={1} />
           <ChartTooltip content={<ChartTooltipContent />} />
         </BarChart>
       </ChartContainer>

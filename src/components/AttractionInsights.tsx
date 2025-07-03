@@ -1,3 +1,4 @@
+
 import { Info, Lock } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
@@ -12,11 +13,11 @@ const ratingsData = [
 ];
 
 const reservationData = [
-  { name: 'On the day', value: 25, color: '#000000' },
-  { name: '2-3 days before', value: 35, color: '#333333' },
-  { name: '4-7 days before', value: 20, color: '#666666' },
-  { name: '7-14 days before', value: 15, color: '#999999' },
-  { name: 'More than 14 days before', value: 5, color: '#cccccc' },
+  { name: 'On the day', value: 25, color: '#14b8a6' },
+  { name: '2-3 days before', value: 35, color: '#0d9488' },
+  { name: '4-7 days before', value: 20, color: '#0f766e' },
+  { name: '7-14 days before', value: 15, color: '#115e59' },
+  { name: 'More than 14 days before', value: 5, color: '#134e4a' },
 ];
 
 const visitTimeData = [
@@ -51,7 +52,7 @@ export function AttractionInsights() {
         {/* Chart 1 - Your Attraction Ranks */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 1</span>
           </div>
           
@@ -68,7 +69,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2 blur-lg">2nd</div>
+            <div className="text-6xl font-bold text-teal-600 mb-2 blur-lg">2nd</div>
             <div className="text-sm text-gray-600 text-center">
               out of all Go City attractions in London
             </div>
@@ -78,7 +79,7 @@ export function AttractionInsights() {
         {/* Chart 2 - Your Attraction Ranks in Observation Deck Category */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 2</span>
           </div>
           
@@ -95,7 +96,7 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black mb-2 blur-lg">1st</div>
+            <div className="text-6xl font-bold text-teal-600 mb-2 blur-lg">1st</div>
             <div className="text-sm text-gray-600 text-center">
               out of all attractions in the Observation Deck category
             </div>
@@ -105,7 +106,7 @@ export function AttractionInsights() {
         {/* Chart 3 - Average Dwell Time at Your Attraction */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 3</span>
           </div>
           
@@ -122,17 +123,17 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black blur-lg">98 minutes</div>
+            <div className="text-6xl font-bold text-teal-600 blur-lg">98 minutes</div>
           </div>
         </div>
 
         {/* Advertisement slot spanning all three columns */}
-        <div className="lg:col-span-3 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-lg p-8 text-center">
+        <div className="lg:col-span-3 bg-gradient-to-r from-teal-50 to-teal-100 border-2 border-teal-200 rounded-lg p-8 text-center">
           <div className="max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               Unlock insights about your attraction for free with Footfall by Go City
             </h3>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold">
+            <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-lg font-semibold">
               Register interest now
             </Button>
           </div>
@@ -141,7 +142,7 @@ export function AttractionInsights() {
         {/* Chart 4 - Ratings for Your Attraction from Go City customers */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 4</span>
           </div>
           
@@ -164,7 +165,7 @@ export function AttractionInsights() {
                 <YAxis type="number" hide />
                 <Bar 
                   dataKey="count" 
-                  fill="#000000"
+                  fill="#14b8a6"
                   radius={[2, 2, 0, 0]}
                 />
               </BarChart>
@@ -175,7 +176,7 @@ export function AttractionInsights() {
         {/* Chart 5 - AI summary of reviews spanning 2 columns */}
         <div className="lg:col-span-2 bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 5</span>
           </div>
           
@@ -195,7 +196,7 @@ export function AttractionInsights() {
         {/* Chart 6 - Go City visitors to Your Attraction with an advance reservation */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 6</span>
           </div>
           
@@ -204,14 +205,14 @@ export function AttractionInsights() {
           </div>
           
           <div className="flex flex-col items-center justify-center h-32">
-            <div className="text-6xl font-bold text-black blur-lg">86%</div>
+            <div className="text-6xl font-bold text-teal-600 blur-lg">86%</div>
           </div>
         </div>
 
         {/* Chart 7 - When are Go City customers making their reservations for Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 7</span>
           </div>
           
@@ -243,7 +244,7 @@ export function AttractionInsights() {
         {/* Chart 8 - When are Go City customers visiting Your Attraction? */}
         <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
           <div className="flex items-center justify-between mb-4">
-            <div className="w-4 h-4 border border-black rounded-full"></div>
+            <div className="w-4 h-4 border border-teal-600 rounded-full bg-teal-100"></div>
             <span className="text-xs font-mono text-gray-400">CHART 8</span>
           </div>
           
@@ -269,7 +270,7 @@ export function AttractionInsights() {
                 <YAxis type="number" hide />
                 <Bar 
                   dataKey="count" 
-                  fill="#000000"
+                  fill="#14b8a6"
                   radius={[2, 2, 0, 0]}
                 />
               </BarChart>
