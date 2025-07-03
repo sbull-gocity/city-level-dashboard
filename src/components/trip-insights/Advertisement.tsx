@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Advertisement() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-8">
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Left section - Copy */}
         <div>
@@ -14,25 +14,25 @@ export function Advertisement() {
 
         {/* Middle section - Numbered list */}
         <div>
-          <ol className="space-y-2 text-gray-700">
+          <ol className="space-y-3 text-gray-700">
             <li className="flex items-center">
-              <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3">1</span>
+              <span className="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-semibold mr-3">1</span>
               The Shard
             </li>
             <li className="flex items-center">
-              <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3">2</span>
+              <span className="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-semibold mr-3">2</span>
               London Eye
             </li>
             <li className="flex items-center">
-              <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3">3</span>
+              <span className="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-semibold mr-3">3</span>
               Hop-on Hop-off Big Bus Tour
             </li>
             <li className="flex items-center">
-              <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3">4</span>
+              <span className="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-semibold mr-3">4</span>
               Tower of London
             </li>
             <li className="flex items-center">
-              <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-semibold mr-3">5</span>
+              <span className="bg-teal-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-semibold mr-3">5</span>
               Madame Tussauds
             </li>
           </ol>
@@ -40,10 +40,10 @@ export function Advertisement() {
 
         {/* Right section - Image placeholder and CTA */}
         <div className="text-center">
-          <div className="bg-gray-200 rounded-lg h-32 mb-4 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Image Placeholder</span>
+          <div className="bg-gray-100 rounded-lg h-32 mb-6 flex items-center justify-center">
+            <span className="text-gray-400 text-sm">Image Placeholder</span>
           </div>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold">
+          <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-semibold">
             Join the club
           </Button>
         </div>

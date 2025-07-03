@@ -4,14 +4,14 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 export function NPSChart() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 3</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 3</span>
       </div>
       
-      <div className="flex items-center gap-2 mb-6">
-        <h3 className="text-sm font-bold text-black">NPS of customers visiting London</h3>
+      <div className="flex items-center gap-2 mb-8">
+        <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">NPS of customers visiting London</h3>
         <Tooltip>
           <TooltipTrigger asChild>
             <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -22,15 +22,15 @@ export function NPSChart() {
         </Tooltip>
       </div>
       
-      <div className="flex items-center justify-center mb-8">
-        <span className="text-6xl font-bold text-black">64</span>
+      <div className="flex items-center justify-center mb-6">
+        <span className="text-5xl font-bold text-gray-900">64</span>
       </div>
       
-      <div className="flex items-center justify-center gap-1 text-sm text-gray-600">
+      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
         <span>This is</span>
-        <span className="font-bold text-lg">higher</span>
+        <span className="font-semibold text-teal-600">higher</span>
         <span>than the industry average NPS of 40</span>
-        <ArrowUp className="w-8 h-8 text-black" />
+        <ArrowUp className="w-5 h-5 text-teal-500" />
       </div>
     </div>
   );

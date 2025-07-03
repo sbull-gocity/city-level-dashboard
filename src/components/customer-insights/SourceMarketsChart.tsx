@@ -9,21 +9,21 @@ const sourceMarkets = [
 
 export function SourceMarketsChart() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 1</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 1</span>
       </div>
       
-      <h3 className="text-sm font-bold text-black mb-3">Top 5 Source Markets</h3>
+      <h3 className="text-sm font-semibold text-gray-900 mb-6 uppercase tracking-wide">Top 5 Source Markets</h3>
       
-      <div className="space-y-0">
+      <div className="space-y-3">
         {sourceMarkets.map((market) => (
-          <div key={market.rank} className="flex items-center gap-3 py-0.5 border-b border-gray-200 last:border-b-0">
-            <div className="w-6 h-6 border border-black rounded-full flex items-center justify-center text-xs font-mono">
+          <div key={market.rank} className="flex items-center gap-4 py-2">
+            <div className="w-7 h-7 bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">
               {market.rank}
             </div>
-            <span className="text-sm font-medium text-black">{market.country}</span>
+            <span className="text-sm font-medium text-gray-800">{market.country}</span>
           </div>
         ))}
       </div>

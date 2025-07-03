@@ -10,10 +10,10 @@ import { Advertisement } from "./customer-insights/Advertisement";
 export function CustomerInsights() {
   return (
     <TooltipProvider>
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-black">Customer Insights</h2>
-          <div className="text-xs text-gray-500 font-mono">SECTION 01</div>
+          <h2 className="text-2xl font-bold text-gray-900">Customer Insights</h2>
+          <div className="text-xs text-gray-400 font-mono">SECTION 01</div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

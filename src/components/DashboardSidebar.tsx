@@ -1,3 +1,4 @@
+
 import { Users, MapPin, Star, Lock } from "lucide-react";
 import {
   Sidebar,
@@ -36,11 +37,11 @@ const menuItems = [
 
 export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarProps) {
   return (
-    <Sidebar className="w-64 border-r-2 border-black/20 bg-white">
-      <SidebarContent className="pt-6">
+    <Sidebar className="w-64 border-r border-gray-200 bg-white">
+      <SidebarContent className="pt-8">
         <SidebarGroup>
-          <SidebarGroupLabel className="text-xs font-mono text-gray-500 mb-4 px-4">
-            ANALYTICS SECTIONS
+          <SidebarGroupLabel className="text-xs font-mono text-gray-400 mb-6 px-4 uppercase tracking-wide">
+            Analytics Sections
           </SidebarGroupLabel>
           
           <SidebarGroupContent>
@@ -50,11 +51,11 @@ export function DashboardSidebar({ activeTab, setActiveTab }: DashboardSidebarPr
                   <SidebarMenuButton
                     onClick={() => setActiveTab(item.id)}
                     className={`
-                      h-12 px-4 w-full justify-start font-medium
-                      border-l-4 transition-all duration-200
+                      h-12 px-4 w-full justify-start font-medium rounded-lg mx-2
+                      transition-all duration-200
                       ${activeTab === item.id 
-                        ? 'border-l-black bg-gray-100 text-black' 
-                        : 'border-l-transparent hover:border-l-gray-300 hover:bg-gray-50 text-gray-700'
+                        ? 'bg-teal-50 text-teal-700 border-l-4 border-teal-600' 
+                        : 'hover:bg-gray-50 text-gray-700 hover:text-gray-900'
                       }
                     `}
                   >

@@ -20,14 +20,14 @@ const chartConfig = {
 
 export function PurchaseToUsageChart() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 4</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 4</span>
       </div>
       
-      <div className="flex items-center gap-2 mb-4">
-        <h3 className="text-sm font-bold text-black">Pass purchase to usage for customers visiting London</h3>
+      <div className="flex items-center gap-2 mb-6">
+        <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Pass purchase to usage for customers visiting London</h3>
         <Tooltip>
           <TooltipTrigger asChild>
             <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -51,7 +51,7 @@ export function PurchaseToUsageChart() {
             height={40}
           />
           <YAxis type="number" hide />
-          <Bar dataKey="value" fill="#404040" stroke="#000000" strokeWidth={1} />
+          <Bar dataKey="value" fill="#14b8a6" stroke="#0d9488" strokeWidth={1} radius={[4, 4, 0, 0]} />
           <ChartTooltip content={<ChartTooltipContent />} />
         </BarChart>
       </ChartContainer>

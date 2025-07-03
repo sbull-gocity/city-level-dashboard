@@ -3,10 +3,10 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 import { PieChart, Pie, Cell } from "recharts";
 
 const partySizeData = [
-  { name: "Solos", value: 25, fill: "#000000" },
-  { name: "Couples", value: 45, fill: "#404040" },
-  { name: "Families", value: 20, fill: "#808080" },
-  { name: "Groups", value: 10, fill: "#c0c0c0" }
+  { name: "Solos", value: 25, fill: "#14b8a6" },
+  { name: "Couples", value: 45, fill: "#0d9488" },
+  { name: "Families", value: 20, fill: "#0f766e" },
+  { name: "Groups", value: 10, fill: "#134e4a" }
 ];
 
 const chartConfig = {
@@ -18,13 +18,13 @@ const chartConfig = {
 
 export function PartySizeChart() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 2</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 2</span>
       </div>
       
-      <h3 className="text-sm font-bold text-black mb-2">Party Size</h3>
+      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Party Size</h3>
       
       <ChartContainer config={chartConfig} className="h-32">
         <PieChart>
@@ -34,8 +34,8 @@ export function PartySizeChart() {
             cy="50%"
             outerRadius={50}
             dataKey="value"
-            stroke="#000000"
-            strokeWidth={1}
+            stroke="#ffffff"
+            strokeWidth={2}
           >
             {partySizeData.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.fill} />
@@ -45,14 +45,14 @@ export function PartySizeChart() {
         </PieChart>
       </ChartContainer>
       
-      <div className="flex flex-wrap gap-2 mt-2">
+      <div className="flex flex-wrap gap-3 mt-4">
         {partySizeData.map((item) => (
-          <div key={item.name} className="flex items-center gap-1">
+          <div key={item.name} className="flex items-center gap-2">
             <div 
-              className="w-2 h-2 border border-black" 
+              className="w-3 h-3 rounded-full" 
               style={{ backgroundColor: item.fill }}
             ></div>
-            <span className="text-xs text-gray-600">{item.name}</span>
+            <span className="text-xs text-gray-600 font-medium">{item.name}</span>
           </div>
         ))}
       </div>

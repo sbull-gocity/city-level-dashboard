@@ -4,14 +4,14 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 
 export function NearestAttractions() {
   return (
-    <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-64">
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-4 h-4 border border-black rounded-full"></div>
-        <span className="text-xs font-mono text-gray-400">CHART 6</span>
+    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 h-64">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+        <span className="text-xs font-mono text-gray-400 uppercase tracking-wide">Chart 6</span>
       </div>
       
       <div className="flex items-center gap-2 mb-6">
-        <h3 className="text-sm font-bold text-black">Highest rated Go City attractions</h3>
+        <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Highest rated Go City attractions</h3>
         <HoverCard>
           <HoverCardTrigger asChild>
             <Info className="w-4 h-4 text-gray-400 cursor-help" />
@@ -22,20 +22,20 @@ export function NearestAttractions() {
         </HoverCard>
       </div>
       
-      <div className="space-y-1">
-        <div className="flex items-center">
+      <div className="space-y-2">
+        <div className="flex items-center py-1">
           <span className="text-sm text-gray-800">1. London Eye</span>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center py-1">
           <span className="text-sm text-gray-800">2. London Bridge Experience</span>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center py-1">
           <span className="text-sm text-gray-800">3. The Shard</span>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center py-1">
           <span className="text-sm text-gray-800">4. Kensington Palace</span>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center py-1">
           <span className="text-sm text-gray-800">5. London Zoo</span>
         </div>
       </div>

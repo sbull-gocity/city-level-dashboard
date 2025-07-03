@@ -3,24 +3,29 @@ import { Building2 } from "lucide-react";
 
 export function DashboardHeader() {
   return (
-    <header className="h-20 flex items-center justify-between px-6 bg-white border-b-2 border-black/20">
+    <header className="h-20 flex items-center justify-between px-8 bg-white border-b border-gray-200">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 border-2 border-black bg-white flex items-center justify-center">
-          <Building2 className="w-8 h-8 text-black" strokeWidth={1.5} />
+        <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center">
+          <Building2 className="w-8 h-8 text-white" strokeWidth={1.5} />
         </div>
         
         <div>
-          <h1 className="text-2xl font-bold text-black tracking-wide">
+          <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
             Hey Luke
           </h1>
-          <p className="text-lg text-gray-600 font-mono">
+          <p className="text-lg text-gray-600">
             Join us to unlock insights for your attraction in London
           </p>
         </div>
       </div>
       
-      <div className="w-32 h-16 border-2 border-dashed border-black/40 flex items-center justify-center">
-        <span className="text-xs text-gray-500 font-mono">LOGO</span>
+      <div className="flex items-center">
+        <div className="text-teal-600 font-bold text-lg">
+          FootFall
+        </div>
+        <div className="text-xs text-gray-400 ml-1">
+          by Go City
+        </div>
       </div>
     </header>
   );
