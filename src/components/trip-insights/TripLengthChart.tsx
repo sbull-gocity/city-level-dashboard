@@ -19,7 +19,7 @@ export function TripLengthChart() {
     <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg p-6 h-80">
       <h3 className="text-sm font-bold text-black mb-4">Trip Length for Customers who Visit London</h3>
       
-      <ChartContainer config={chartConfig} className="h-60">
+      <ChartContainer config={chartConfig} className="h-52">
         <BarChart data={tripLengthData} margin={{ top: 20, right: 20, bottom: 40, left: 20 }}>
           <XAxis 
             type="category" 
