@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import { DashboardSidebar } from "@/components/DashboardSidebar";
 import { DashboardHeader } from "@/components/DashboardHeader";
 import { CustomerInsights } from "@/components/CustomerInsights";
@@ -24,19 +23,17 @@ const Index = () => {
   };
 
   return (
-    <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gray-50">
-        <DashboardSidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+    <div className="min-h-screen flex w-full bg-gray-50">
+      <DashboardSidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+      
+      <main className="flex-1 flex flex-col">
+        <DashboardHeader />
         
-        <main className="flex-1 flex flex-col">
-          <DashboardHeader />
-          
-          <div className="flex-1 p-8">
-            {renderActiveTab()}
-          </div>
-        </main>
-      </div>
-    </SidebarProvider>
+        <div className="flex-1 p-8">
+          {renderActiveTab()}
+        </div>
+      </main>
+    </div>
   );
 };
 
